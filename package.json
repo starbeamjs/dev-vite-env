@@ -1,0 +1,29 @@
+{
+  "name": "vite-env",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Easily add the import.meta types from vite and vitest to your TypeScript project",
+  "license": "ISC",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts"
+    }
+  },
+  "scripts": {
+    "test:lint": "eslint . --max-warnings 0",
+    "test:types": "tsc -b"
+  },
+  "devDependencies": {
+    "@starbeam-dev/eslint-plugin": "^1.0.0"
+  },
+  "peerDependencies": {
+    "vite": "^4.4.11",
+    "vitest": "^1.0.0-beta.1"
+  },
+  "peerDependenciesMeta": {
+    "vitest": {
+      "optional": true
+    }
+  }
+}
